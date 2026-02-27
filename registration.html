@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Registration</title>
+</head>
+<body>
+  <!-- Shared header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="profile.html">About</a></li>
+        <li><a href="schedule.html">Courses</a></li>
+        <li><a href="registration.html" class="active">Register</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h1>Student Registration</h1>
+
+    <form action="https://formspree.io/f/mojnbqgr" method="POST">
+      <label>
+        Full name:<br>
+        <input type="text" name="name" required>
+      </label><br><br>
+
+      <label>
+        Registration number:<br>
+        <input type="text" name="regno" required>
+      </label><br><br>
+
+      <label>
+        Email:<br>
+        <input type="email" name="_replyto" required>
+      </label><br><br>
+
+      <label>
+        Password:<br>
+        <input type="password" name="password" required>
+      </label><br><br>
+
+      <label>
+        Course selection:<br>
+        <select name="course">
+          <option>CS 224L</option>
+          <option>Algorithms</option>
+          <option>Databases</option>
+        </select>
+      </label><br><br>
+
+      <fieldset>
+        <legend>Semester</legend>
+        <label><input type="radio" name="semester" value="Fall" checked> Fall</label>
+        <label><input type="radio" name="semester" value="Spring"> Spring</label>
+      </fieldset><br>
+
+      <label><input type="checkbox" name="terms" required> I accept the terms and conditions</label><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
