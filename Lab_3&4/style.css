@@ -115,3 +115,20 @@ background:radial-gradient(circle,blue,white);
 padding:50px;
 margin:20px;
 }
+img{
+width:200px;
+margin:20px;
+}
+
+.circle{
+border-radius:50%;
+}
+
+.shadowimg{
+box-shadow:0 4px 10px gray;
+}
+
+img:hover{
+transform:scale(1.1);
+transition:0.3s;
+}
