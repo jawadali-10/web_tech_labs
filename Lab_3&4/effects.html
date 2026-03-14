@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Effects - Task 10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    /* Gradient Text */
+    .gradient-text {
+      font-size: 48px;
+      font-weight: bold;
+      background: linear-gradient(to right, red, blue);
+      -webkit-background-clip: text; /* Chrome, Safari */
+      background-clip: text;         /* Standard property for other browsers */
+      color: transparent;
+      margin-bottom: 60px;
+    }
+
+    /* Loader */
+    .loader {
+      border: 5px solid gray;
+      border-top: 5px solid blue;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Advanced CSS Effects - Task 10</h1>
+
+<!-- Gradient Text Example -->
+<h2 class="gradient-text">Gradient Text</h2>
+
+<!-- Loader Example -->
+<div class="loader"></div>
+
+</body>
+</html>
