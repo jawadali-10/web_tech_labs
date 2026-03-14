@@ -1,0 +1,57 @@
+/* Element selector */
+p{
+color:blue;
+}
+
+/* Class selector */
+.highlight{
+background-color:yellow;
+}
+
+/* ID selector */
+#title{
+border:2px solid black;
+padding:10px;
+}
+
+/* Universal selector */
+*{
+font-family:Arial;
+}
+
+/* Attribute selector */
+input[type="text"]{
+border:2px solid red;
+padding:5px;
+}
+
+/* Descendant combinator */
+div p{
+color:green;
+}
+
+/* Pseudo classes */
+a:hover{
+color:red;
+}
+
+li:first-child{
+color:purple;
+}
+
+li:last-child{
+color:orange;
+}
+
+li:nth-child(2){
+font-weight:bold;
+}
+
+/* Pseudo elements */
+p::first-letter{
+font-size:30px;
+}
+
+p::before{
+content:"Note: ";
+}
