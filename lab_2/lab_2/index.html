@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Your Name</title>
+  <meta name="description" content="Portfolio and lab submission for CS 224L at UET Peshawar">
+</head>
+<body>
+  <!-- Shared header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="profile.html">About</a></li>
+        <li><a href="schedule.html">Courses</a></li>
+        <li><a href="registration.html">Register</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <h1>Professional Introduction</h1>
+    <p>Hello — I am <strong>Jawad Ali</strong>, a student at the University of Engineering & Technology, Peshawar studying web technologies. This portfolio includes my lab assignments and links to my GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a>.</p>
+
+    <section>
+      <h2>Labs & Pages</h2>
+      <ul>
+        <li><a href="profile.html">Personal Profile</a></li>
+        <li><a href="schedule.html">Course Schedule</a></li>
+        <li><a href="navigation.html">Navigation Demo</a></li>
+        <li><a href="registration.html">Registration Form</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2026 Your Name — CS 224L</small>
+  </footer>
+</body>
+</html>
+<script>
+  document.querySelectorAll('nav a').forEach(a => {
+    if (a.getAttribute('href') === location.pathname.split('/').pop() || (location.pathname.endsWith('/') && a.getAttribute('href') === 'index.html')) {
+      a.classList.add('active');
+    }
+  });
+</script>

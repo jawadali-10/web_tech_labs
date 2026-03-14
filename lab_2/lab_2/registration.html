@@ -37,9 +37,10 @@
         Email:<br>
         <input type="email" name="_replyto" required>
       </label><br><br>
-       <label>
+
+      <label>
         Password:<br>
-        <input type="password" name="_replyto" required>
+        <input type="password" name="password" required>
       </label><br><br>
 
       <label>
@@ -64,10 +65,3 @@
   </main>
 </body>
 </html>
-<script>
-  document.querySelectorAll('nav a').forEach(a => {
-    if (a.getAttribute('href') === location.pathname.split('/').pop() || (location.pathname.endsWith('/') && a.getAttribute('href') === 'index.html')) {
-      a.classList.add('active');
-    }
-  });
-</script>

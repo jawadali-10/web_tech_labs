@@ -6,7 +6,8 @@
   <title>Weekly Schedule</title>
 </head>
 <body>
-
+  <!-- Shared header -->
+  <!-- paste shared-header.html content here -->
   <header>
     <nav>
       <ul>
@@ -66,10 +67,3 @@
   </main>
 </body>
 </html>
-<script>
-  document.querySelectorAll('nav a').forEach(a => {
-    if (a.getAttribute('href') === location.pathname.split('/').pop() || (location.pathname.endsWith('/') && a.getAttribute('href') === 'index.html')) {
-      a.classList.add('active');
-    }
-  });
-</script>
