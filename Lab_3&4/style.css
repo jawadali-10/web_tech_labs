@@ -162,3 +162,13 @@ opacity:0.8;
 background:gray;
 pointer-events:none;
 }
+input,select{
+display:block;
+margin:10px;
+padding:10px;
+border:1px solid gray;
+}
+
+input:focus{
+border:2px solid blue;
+}
