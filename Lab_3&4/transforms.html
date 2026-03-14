@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transform Gallery - Task 9</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 40px;
+    }
+
+    .gallery h2 {
+      display: inline-block;
+      margin: 20px;
+      padding: 20px 40px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* Task 9 CSS Hover Effects */
+    .rotate:hover {
+      transform: rotate(20deg);
+    }
+
+    .scale:hover {
+      transform: scale(1.2);
+    }
+
+    .move:hover {
+      transform: translateX(20px);
+    }
+  </style>
+</head>
+<body>
+
+<h1>CSS Transform Gallery - Task 9</h1>
+
+<div class="gallery">
+  <h2 class="rotate">Rotate Me</h2>
+  <h2 class="scale">Scale Me</h2>
+  <h2 class="move">Move Me</h2>
+</div>
+
+</body>
+</html>
