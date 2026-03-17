@@ -201,3 +201,21 @@ body {
 @media (min-width: 1024px) {
   body { font-size: 18px; }
 }
+/* Task 11 – Advanced Grid (Magazine) */
+.magazine {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+}
+
+.main-article, .sidebar-article {
+  padding: 10px;
+  background: lightyellow;
+  border: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .magazine {
+    grid-template-columns: 1fr;
+  }
+}
