@@ -219,3 +219,20 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Task 12 – Flex Form */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form input, .form button {
+  flex: 1 1 200px;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .form input, .form button {
+    flex: 1 1 100%;
+  }
+}
