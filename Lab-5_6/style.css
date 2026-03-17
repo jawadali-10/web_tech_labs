@@ -170,3 +170,22 @@ section {
     grid-template-columns: 1fr;
   }
 }
+/* Task 9 – Dashboard Layout */
+.dashboard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 10px;
+}
+
+.sidebar {
+  background: gray;
+  padding: 10px;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  background: lightgreen;
+  padding: 10px;
+}
