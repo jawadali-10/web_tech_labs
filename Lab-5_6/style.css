@@ -60,3 +60,23 @@
   background: lightblue;
   padding: 10px;
 }
+/* Task 4 – Flex Navigation */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
