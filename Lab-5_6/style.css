@@ -189,3 +189,15 @@ section {
   background: lightgreen;
   padding: 10px;
 }
+/* Task 10 – Media Queries */
+body {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  body { font-size: 16px; }
+}
+
+@media (min-width: 1024px) {
+  body { font-size: 18px; }
+}
