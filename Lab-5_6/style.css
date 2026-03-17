@@ -236,3 +236,21 @@ body {
     flex: 1 1 100%;
   }
 }
+/* Task 13 – Portfolio */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.project {
+  background: lightpink;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    grid-template-columns: 1fr;
+  }
+}
