@@ -272,3 +272,24 @@ th, td {
     overflow-x: auto;
   }
 }
+/* Task 15 – Landing Page */
+.landing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero, .features {
+  background: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .landing {
+    flex-direction: row;
+  }
+  .hero, .features {
+    flex: 1;
+  }
+}
