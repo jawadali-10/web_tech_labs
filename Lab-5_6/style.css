@@ -80,3 +80,22 @@
     align-items: center;
   }
 }
+/* Task 5 – Flexbox Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  flex: 1 1 30%;
+  background: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
