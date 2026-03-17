@@ -34,3 +34,29 @@
     float: none;
   }
 }
+/* Task 3 – Positioning */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.modal {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+.sidebar {
+  position: sticky;
+  top: 60px;
+  background: lightblue;
+  padding: 10px;
+}
