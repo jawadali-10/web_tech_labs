@@ -99,3 +99,22 @@
     flex: 1 1 100%;
   }
 }
+/* Task 6 – Grid Gallery */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid div {
+  background: lightcoral;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
