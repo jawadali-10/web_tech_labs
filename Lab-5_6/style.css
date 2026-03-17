@@ -118,3 +118,30 @@
     grid-template-columns: 1fr;
   }
 }
+/* Task 7 – Holy Grail Layout */
+.main {
+  display: flex;
+  gap: 10px;
+}
+
+aside {
+  width: 20%;
+  background: lightgray;
+  padding: 10px;
+}
+
+section {
+  flex: 1;
+  background: lightgreen;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
