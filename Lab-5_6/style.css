@@ -1,0 +1,36 @@
+.block { display: block; background: lightblue; margin:10px 0;}
+.inline { display: inline; background: yellow;}
+.inline-block { display: inline-block; width: 150px; height: 50px; background: orange; margin:10px;}
+.hidden { display: none;}
+
+/* Task 2 – Float Layout */
+.container {
+  width: 100%;
+}
+
+.sidebar {
+  float: left;
+  width: 30%;
+  background: lightgray;
+  padding: 10px;
+}
+
+.content {
+  float: left;
+  width: 70%;
+  background: lightgreen;
+  padding: 10px;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .sidebar, .content {
+    width: 100%;
+    float: none;
+  }
+}

@@ -1,6 +1,0 @@
-.block { display: block; background: lightblue; margin:10px 0;}
-.inline { display: inline; background: yellow;}
-.inline-block { display: inline-block; width: 150px; height: 50px; background: orange; margin:10px;}
-.hidden { display: none;}
-
-@media (max-width:600px){.inline-block{display:block; width:100%;}}
